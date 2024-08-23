@@ -33,10 +33,10 @@ h1, h2, a {
 /* Card styles */
 .card {
     background: #ffffff; /* White background for the card */
-    border-radius: 50px; /* Adjusted border radius for a more formal look */
+    border-radius: 15px; /* Adjusted border radius for a more formal look */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.7);
-    padding: 30px;
-    width: 55%;
+    padding: 20px;
+    width: 100%;
     max-width: 800px;
     text-align: center;
     box-sizing: border-box; /* Ensure padding is included in width calculation */
@@ -155,7 +155,6 @@ h1, h2, a {
     margin: 0 0 15px;
     font-size: 1.1em; /* Adjust size as needed */
     width: 50%; /* Ensure full width on mobile screens */
-    display:flex;
 }
 
 /* Image styles */
@@ -163,13 +162,13 @@ h1, h2, a {
     width: 100%;
     display: flex;
     justify-content: flex-end; /* Align image to the right */
-    margin-top:-250px;
 }
 
 .project-image img {
     max-width: 50%;
     height: auto;
     border-radius: 10px; /* Optional: Add rounded corners */
+    margin-top:-250px;
 }
 
 /* More button styles */
@@ -202,10 +201,13 @@ h1, h2, a {
         max-width: 100%; /* Ensure no maximum width restriction */
         text-align: center; /* Center text */
     }
+
     .project-description p {
-        width: 100%;
-        text-align: center;
+        width: 100%; /* Full width on smaller screens */
+        max-width: 100%; /* Ensure no maximum width restriction */
+        text-align: center; /* Center text */
     }
+
 
     .project-image {
         display: none; /* Hide image on smaller screens */
@@ -230,8 +232,9 @@ h1, h2, a {
     }
 
     .project-description p {
-        width: 100%;
-        text-align: center;
+        width: 100%; /* Full width on smaller screens */
+        max-width: 100%; /* Ensure no maximum width restriction */
+        text-align: center; /* Center text */
     }
 
     .project-image {
