@@ -1,0 +1,99 @@
+/* Basic Reset */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0; /* Light gray background */
+}
+h1, h2, p, a {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+/* Background styles */
+.background {
+    background: #f0f0f0; /* Light gray background */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Add padding to create space around the card */
+    margin:20px;
+    box-sizing: border-box; /* Include padding in height calculation */
+}
+
+/* Card styles */
+.card {
+    background: #ffffff; /* White background for the card */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+    margin: 0 auto; /* Center the card horizontally */
+}
+
+/* Profile section styles */
+.profile {
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.profile h1 {
+    margin: 10px 0;
+}
+
+.social-links {
+    margin: 10px 0;
+}
+
+.social-icon {
+    color: #333;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.social-icon:hover {
+    color: #007bff;
+}
+
+.view-resume {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.view-resume:hover {
+    background-color: #0056b3;
+}
+
+/* Portfolio section styles */
+.portfolio {
+    margin-top: 20px;
+}
+
+.portfolio h2 {
+    margin: 20px 0 10px;
+    font-size: 1.5em;
+}
+
+.portfolio p {
+    margin-bottom: 15px;
+}
