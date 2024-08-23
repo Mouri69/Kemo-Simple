@@ -109,7 +109,7 @@ h1, h2, a {
 /* Style for the horizontal line */
 .separator {
     border: none;
-    border-top: 2px solid #FBD188; /* Light gray line */
+    border-top: 1px solid #000000; /* Light gray line */
     margin: 20px 0; /* Space above and below the line */
 }
 
@@ -118,59 +118,127 @@ h1, h2, a {
     border-top: 5px solid #FBD188;
 }
 
+.projects {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.projects h2 {
+    margin: 20px 0;
+    font-size: 1.8em; /* Adjust size as needed */
+}
+
+.projects .divider_gold {
+    width: 7%;
+    border-top: 5px solid #FBD188;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column; /* Column layout for smaller screens */
+    align-items: center;
+    gap: 20px; /* Add space between items */
+}
+
+/* Description styles */
+.project-description {
+    max-width: 600px;
+    text-align: left;
+}
+
+.project-description h3 {
+    margin: 0 0 10px;
+    font-size: 1.5em; /* Adjust size as needed */
+}
+
+.project-description p {
+    margin: 0 0 15px;
+    font-size: 1.1em; /* Adjust size as needed */
+    width: 50%; /* Ensure full width on mobile screens */
+    display:flex;
+}
+
+/* Image styles */
+.project-image {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; /* Align image to the right */
+    margin-top:-220px;
+}
+
+.project-image img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+/* More button styles */
+.more_button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #FBD188;
+    color: #000000;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.more_button:hover {
+    background-color: #0056b3;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .profile-pic {
-        width: 180px; /* Increased size */
-        height: 180px; /* Increased size */
+    .project-item {
+        flex-direction: column; /* Column layout for smaller screens */
+        align-items: center;
+        text-align: center; /* Center text in the project-item */
     }
 
-    .profile h1 {
-        font-size: 1.8em; /* Increased font size */
+    .project-description {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 100%; /* Ensure no maximum width restriction */
+        text-align: center; /* Center text */
+    }
+    .project-description p {
+        width: 100%;
     }
 
-    .social-icon {
-        font-size: 1.8em; /* Increased size */
+    .project-image {
+        display: none; /* Hide image on smaller screens */
     }
 
-    .view-resume {
-        font-size: 1.2em; /* Increased font size */
-        padding: 12px 24px; /* Increased padding */
-    }
-
-    .portfolio h2 {
-        font-size: 1.8em; /* Increased font size */
-    }
-
-    .portfolio p {
-        font-size: 1.1em; /* Increased font size */
+    .more_button {
+        margin-top: 20px; /* Increase margin-top for better spacing */
     }
 }
 
 @media (max-width: 480px) {
-    .profile-pic {
-        width: 200px; /* Increased size */
-        height: 200px; /* Increased size */
+    .project-item {
+        flex-direction: column; /* Column layout for smaller screens */
+        align-items: center;
+        text-align: center; /* Center text in the project-item */
     }
 
-    .profile h1 {
-        font-size: 2em; /* Increased font size */
+    .project-description {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 100%; /* Ensure no maximum width restriction */
+        text-align: center; /* Center text */
     }
 
-    .social-icon {
-        font-size: 2em; /* Increased size */
+    .project-description p {
+        width: 100%;
     }
 
-    .view-resume {
-        font-size: 1.4em; /* Increased font size */
-        padding: 15px 30px; /* Increased padding */
+    .project-image {
+        display: none; /* Hide image on smaller screens */
     }
 
-    .portfolio h2 {
-        font-size: 2em; /* Increased font size */
-    }
-
-    .portfolio p {
-        font-size: 1.2em; /* Increased font size */
+    .more_button {
+        margin-top: 20px; /* Increase margin-top for better spacing */
+        padding: 15px 30px; /* Increase padding for better touch targets */
+        font-size: 1.2em; /* Adjust font size */
     }
 }
