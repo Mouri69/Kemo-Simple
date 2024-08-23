@@ -230,6 +230,7 @@ h1, h2, a {
 
     .project-description p {
         width: 100%;
+        text-align: center;
     }
 
     .project-image {
