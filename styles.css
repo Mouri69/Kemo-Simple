@@ -1,40 +1,46 @@
 /* Basic Reset */
-body{
+body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif; /* Default font for the body */
     background: #f0f0f0; /* Light gray background */
 }
-h1, h2, p, a {
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(71, 71, 71);
+    text-align: left; /* Align text to the left for formal appearance */
+}
+
+h1, h2, a {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    
+    font-family: 'Montserrat', sans-serif; /* Font for headings */
 }
 
 /* Background styles */
 .background {
     background: #f0f0f0; /* Light gray background */
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px; /* Add padding to create space around the card */
-    margin:20px;
+    margin: 0; /* Reset margin for responsiveness */
     box-sizing: border-box; /* Include padding in height calculation */
+    height: 100vh;
 }
 
 /* Card styles */
 .card {
     background: #ffffff; /* White background for the card */
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    border-radius: 15px; /* Adjusted border radius for a more formal look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.7);
     padding: 20px;
     width: 100%;
     max-width: 800px;
     text-align: center;
     box-sizing: border-box; /* Ensure padding is included in width calculation */
-    margin: 0 auto; /* Center the card horizontally */
+    margin: auto; /* Center card horizontally */
 }
 
 /* Profile section styles */
@@ -52,6 +58,7 @@ h1, h2, p, a {
 
 .profile h1 {
     margin: 10px 0;
+    font-size: 1.5em; /* Adjusted font size for responsiveness */
 }
 
 .social-links {
@@ -59,14 +66,14 @@ h1, h2, p, a {
 }
 
 .social-icon {
-    color: #333;
+    color: #FBD188;
     margin: 0 10px;
     text-decoration: none;
     font-size: 1.5em;
 }
 
 .social-icon:hover {
-    color: #007bff;
+    color: #16120b;
 }
 
 .view-resume {
@@ -74,10 +81,11 @@ h1, h2, p, a {
     margin-top: 15px;
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #FBD188;
+    color: #000000;
     text-decoration: none;
     font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .view-resume:hover {
@@ -96,4 +104,73 @@ h1, h2, p, a {
 
 .portfolio p {
     margin-bottom: 15px;
+}
+
+/* Style for the horizontal line */
+.separator {
+    border: none;
+    border-top: 2px solid #FBD188; /* Light gray line */
+    margin: 20px 0; /* Space above and below the line */
+}
+
+.divider_gold {
+    width: 7%;
+    border-top: 5px solid #FBD188;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .profile-pic {
+        width: 180px; /* Increased size */
+        height: 180px; /* Increased size */
+    }
+
+    .profile h1 {
+        font-size: 1.8em; /* Increased font size */
+    }
+
+    .social-icon {
+        font-size: 1.8em; /* Increased size */
+    }
+
+    .view-resume {
+        font-size: 1.2em; /* Increased font size */
+        padding: 12px 24px; /* Increased padding */
+    }
+
+    .portfolio h2 {
+        font-size: 1.8em; /* Increased font size */
+    }
+
+    .portfolio p {
+        font-size: 1.1em; /* Increased font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-pic {
+        width: 200px; /* Increased size */
+        height: 200px; /* Increased size */
+    }
+
+    .profile h1 {
+        font-size: 2em; /* Increased font size */
+    }
+
+    .social-icon {
+        font-size: 2em; /* Increased size */
+    }
+
+    .view-resume {
+        font-size: 1.4em; /* Increased font size */
+        padding: 15px 30px; /* Increased padding */
+    }
+
+    .portfolio h2 {
+        font-size: 2em; /* Increased font size */
+    }
+
+    .portfolio p {
+        font-size: 1.2em; /* Increased font size */
+    }
 }
