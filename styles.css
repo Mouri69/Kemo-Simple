@@ -188,6 +188,44 @@ h1, h2, a {
     background-color: #0056b3;
 }
 
+/* Style the golden star */
+.golden-star {
+    color: gold;
+    margin-right: 5px;
+}
+
+/* Optional styling for the dropdowns */
+/* Style the golden star */
+.golden-star {
+    color: gold;
+    margin-right: 5px;
+}
+
+/* Ensure all dropdown content is aligned to the left */
+.dropdown-section {
+    text-align: left; /* Ensures all content is aligned left */
+    margin-left: 20px; /* Adds padding from the left side */
+}
+
+/* Optional styling for the dropdowns */
+details {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* Ensure list items align left */
+ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+/* Optional styling for the dropdown summary */
+summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .project-item {
