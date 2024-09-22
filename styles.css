@@ -78,18 +78,20 @@ h1, h2, a {
 
 .view-resume {
     display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #FBD188;
-    color: #000000;
+    padding: 12px 25px;
+    background-color: #FBD188; /* Nice blue color */
+    color: white;
     text-decoration: none;
-    font-size: 1em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .view-resume:hover {
-    background-color: #16120b;
+    background-color:#16120b; /* Darker blue on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
 }
 
 /* Portfolio section styles */
@@ -174,18 +176,20 @@ h1, h2, a {
 /* More button styles */
 .more_button {
     display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #FBD188;
-    color: #000000;
+    padding: 12px 25px;
+    background-color: #FBD188; /* Nice blue color */
+    color: white;
     text-decoration: none;
-    font-size: 1em;
-    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .more_button:hover {
-    background-color: #16120b;
+    background-color:#16120b; /* Darker blue on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
 }
 
 /* Style the golden star */
